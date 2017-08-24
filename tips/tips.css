@@ -1,0 +1,109 @@
+/* 初始化 */
+body, div, ul, li, ol, h1, h2, h3, h4, h5, h6, input, textarea, select, p, dl, dt, dd, a, img, button, form, table, th, tr, td, tbody, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+body {
+	font: 14px 'Microsoft YaHei', PingHei, '宋体', Tahoma, Arial, sans-serif;
+	color: #333;
+}
+
+em, i {
+	font-style: normal;
+}
+
+strong {
+	font-weight: normal;
+}
+
+.clearfix:after {
+	content: "";
+	display: block;
+	visibility: hidden;
+	height: 0;
+	clear: both;
+}
+
+.clearfix {
+	zoom: 1;
+}
+
+a {
+	text-decoration: none;
+	color: #969696;
+	font-size: 12px;
+	font-family: 'Microsoft YaHei', PingHei, '宋体', Tahoma, Arial, sans-serif;
+}
+
+a:hover {
+	color: #cb7407;
+	text-decoration: none;
+}
+
+ul, ol, li {
+	list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-size: 14px;
+	font-weight: normal;
+	font-family: Microsoft YaHei, PingHei;
+}
+/*初始化结束*/
+.tips{
+	position: fixed;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	z-index: 10000;
+	border:#ccc solid 1px;
+	border-radius: 3px;
+	/*box-shadow：1px 1px 50px rgba(0,0,0,.3)；*/
+}
+.tips .tip-head{
+	padding: 10px;
+	text-align: center;
+	line-height:24px;
+	font-size: 14px;
+	background-color: #F8F8F8;
+}
+.tips .tip-content{
+	padding: 10px;
+	line-height:24px;
+	font-size: 14px;
+	overflow: hidden;
+}
+.tips .tip-close{
+	position: absolute;
+	top:10px;
+	right: 10px;
+	display: inline-block;
+	width:24px;
+	line-height:24px;
+	font-size: 20px;
+	cursor: pointer;
+}
+.tips .tip-foot{
+	padding: 10px;
+	text-align: center;
+	line-height:24px;
+	font-size: 14px;
+	position: absolute;
+	bottom: 0;
+	width:100%;
+	box-sizing: border-box;
+	background-color: #fff;
+}
+.tips .tip-foot button{
+	line-height:24px;
+	padding: 5px 15px;
+	background-color: #2E8DED;
+	color: #fff;
+	border-radius: 3px;
+	cursor: pointer;
+	margin: 0 10px;
+}
+.tips .tip-foot button:hover{
+	background-color: #4398EE;
+}
